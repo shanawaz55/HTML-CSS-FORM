@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS FORMS</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    
+<fieldset>
+    <legend>This is my form</legend>
+    <form action="" method="post" name="first_form" >
+
+    <p><label for="email">Email:</label>
+      <input type="text" name="email" maxlength="50"  value="" class="input"/>
+    </p>
+    <p><label for="password" >Password:</label>
+      <input type="password" name="password" class="input"/>
+    </p>
+    <p>
+      <label for="confirm_password" >Confirm Password:</label>
+       <input type="password" name="confirm_password" class="input"/>
+    </p>
+    <p>
+      <label for="file">Upload Your Picture:</label>
+      <input type="file" name="userfile" class="input" />
+    </p>
+    <input type="hidden" name="actionflag" value="save" />
+    <input type="hidden" name="chech_file_size" value="5000"/>
+
+    <p><label for="gender">Gender:</label>
+     <input type="radio" name="gender" value="male" />Male
+     <input type="radio" name="gender" value="female" class="input" />Female
+     <br />
+    </p>
+    <p><label for="country">Select Country:</label>
+        
+    <select name="country">
+    <option value="UK">United Kingdom</option>
+    <option value="USA">United States of America</option>
+    <option value="SA">south Africa </option>
+    </select></p>
+
+    <p><label for="hobby">Hobby:</label>
+    <input type="checkbox" name="cricket" value="cricket" />Cricket
+    <input type="checkbox" name="football" value="football" />Football
+    </p>
+    <p><label for="address">Address</label>
+     <textarea rows="6" cols="25" name="address"></textarea>
+    </p>
+    <p><input type="submit" value="Submit" class="submit"/>
+    </p>
+
+    </form>
+
+    </fieldset>
+    
+</body>
+</html>
